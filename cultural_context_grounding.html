@@ -65,15 +65,26 @@
 		
 
 		<center>
-		<iframe width="840" height="472" src="https://www.youtube.com/embed/4RVFZmd_tNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		
-		<br>
-
 		<div class="publication">
-			<h4 style="margin-bottom:0px">Understanding Politics via Contextualized Discourse Processing <span>(<a href="https://aclanthology.org/2021.emnlp-main.102/">link</a>, <a href="https://github.com/pujari-rajkumar/compositional_learner">code</a>, <a href="data/understanding_politics_ppt.pdf">presentation</a>, <a href="data/understanding_politics_poster.pdf">poster</a>)</span></h4>
-			<span style="color:#991818">Rajkumar Pujari, Dan Goldwasser</span><br>
-			<span style="color:#991818">Long paper at EMNLP 2021</span><br>
-		</div>
+            <h4 style="margin-bottom:0px; font-weight:bold; text-align:center;">
+                LLM-Human Schema Pipeline for Cultural Context Grounding of Conversations
+            </h4>
+            <span style="color:#991818">Rajkumar Pujari and Dan Goldwasser</span><br>
+            <span style="color:#991818">Under Submission</span><br>
+        </div>
+
+        <div class="content row">
+            <p style="text-align:left">
+                <strong>Abstract:</strong>
+                Conversations often adhere to generally understood social norms that may vary across cultures. For example, while addressing parents by name is commonplace in the West, it is rare in most Asian cultures. Adherence or violation of such norms often dictates the tenor of conversations. Modeling relevant cultural information could help in building more effective systems for conversational understanding. However, such information is rarely available explicitly. Rather, it could be learned by observing repeating patterns of human behavior.
+            </p>
+        
+            <p style="text-align:left;">
+                In this paper, we tackle this problem by introducing a Cultural Context Schema for conversations. It comprises (1) conversational information such as emotions, dialogue acts, etc., and (2) cultural information such as social norms, violations, etc. We generate ~110k social norm and violation descriptions for ~23k conversations from Chinese culture using GPT-3.5. We refine them using automated verification strategies which are evaluated against cultural expert judgements. We organize these descriptions into meaningful clusters which we call 'norm concepts' using an interactive human-in-loop concept discovery framework. We ground the norm concepts and the descriptions in conversations using symbolic explanations. Finally, we use the obtained dataset for downstream tasks such as emotion detection, and dialogue act identification. We show it significantly improves the empirical performance.
+            </p>
+        </div>
+
 
 		</center>
 
