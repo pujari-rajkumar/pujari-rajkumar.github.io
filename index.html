@@ -1,4 +1,3 @@
-
 <!doctype html>
 <!-- The DOCTYPE declaration above will set the     -->
 <!-- browser's rendering engine into                -->
@@ -6,113 +5,116 @@
 <!-- with a "Quirks Mode" doctype is not supported. -->
 
 <html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-<!--                                                               -->
-<!-- Consider inlining css to reduce the number of requested files -->
-<!--                                                               -->
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans"
-	rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="css/rajkumar.css">
+        <!--                                                               -->
+        <!-- Consider inlining css to reduce the number of requested files -->
+        <!--                                                               -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/rajkumar.css">
 
-<!--                                           -->
-<!-- Any title is fine                         -->
-<!--                                           -->
-<title>Rajkumar Pujari</title>
+        <!--                                           -->
+        <!-- Any title is fine                         -->
+        <!--                                           -->
+        <title>Rajkumar Pujari</title>
 
-<!--                                           -->
-<!-- This script loads your compiled module.   -->
-<!-- If you add any GWT meta tags, they must   -->
-<!-- be added before this line.                -->
-<!--                                           -->
-<script type="text/javascript" language="javascript"
-	src="js/bootstrap.min.js"></script>
+        <!--                                           -->
+        <!-- This script loads your compiled module.   -->
+        <!-- If you add any GWT meta tags, they must   -->
+        <!-- be added before this line.                -->
+        <!--                                           -->
+        <script type="text/javascript" language="javascript" src="js/bootstrap.min.js"></script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <script>
+            (function(i,s,o,g,r,a,m){
+                i['GoogleAnalyticsObject']=r;
+                i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)
+                },
+                i[r].l=1*new Date();
+                a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];
+                a.async=1;
+                a.src=g;
+                m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-79894772-1', 'auto');
-  ga('send', 'pageview');
+            ga('create', 'UA-79894772-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
 
-</script>
-</head>
+    <body>
+        <div class="container">
+            <center>
+                <h2>Rajkumar Pujari</h2>
+            </center>
 
+            <hr class="nomargin">
+            <nav class="mynavbar">
+                <a href="index.html"><span class="focus">HOME</span></a>
+                <a href="publications.html">PUBLICATIONS</a>
+                <a href="software.html">SOFTWARE</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="cv.html">CV</a>
+            </nav>
+            
+            <hr class="nomargin">
+            <br>
+            <div class="content row">
+                <div class="col-md-8">
+                    <p>
+                        I am a Ph.D. candidate in the Department of Computer Science at Purdue University. Currently, I am actively looking for full-time NLP research positions in the industry. I work under the guidance of <a href="https://www.cs.purdue.edu/homes/dgoldwas/">Prof. Dan Goldwasser</a>. My Ph.D. thesis is about conceptualizing and building systems for contextualized pragmatic language understanding.
+                    </p>
 
-<body>
-	<div class="container">
-		<center>
-			<h2>Rajkumar Pujari</h2>
-		</center>
+                    <p>
+                        Specifically, I worked on frameworks for wholistic <a href="pubpages/understanding_politics.html">political text contextualization</a> and <a href="pubpages/cultural_context_grounding.html">cultural context grounding for conversations</a>. I have also worked on building and benchmarking challenging <a href="pubpages/language_in_context.html">evaluation datasets</a> for contextualized political text understanding. From a technical standpoint, I worked extensively with transformer-based models, fine-tuning LLMs, large graphs, and neural architecture design. I have also spent significant time designing, collecting, and curating interesting CSS datasets for pragmatic language understanding. I am currently working on <a href="https://www.darpa.mil/program/computational-cultural-understanding">DARPA CCU program</a>.
+                    </p>
 
-		<hr class="nomargin">
-		<nav class=mynavbar>
-			<a href="index.html"><span class="focus">HOME</span></a> <a
-				href="publications.html">PUBLICATIONS</a> <a href="software.html">SOFTWARE</a>
-			<a href="contact.html">CONTACT</a> <a href="cv.html">CV</a>
+                    <p>
+                        I interned at Microsoft Research Redmond in 2021 and Amazon Alexa Seattle in 2019. At MSR, I worked with <a href="https://www.microsoft.com/en-us/research/people/elnouri/">Elnaz Nouri</a>, <a href="https://www.linkedin.com/in/eoveson/">Erik Oveson</a> and <a href="https://scholar.google.com/citations?user=ViilpdV5QxsC&hl=en">Priyanka Kulkarni</a> on building a Reinforcement Learning Guided Multi-Task Framework for Low-Resource Stereotype Detection. Our work was published as a <a href="pubpages/reinforcement_guided.html">long paper</a> at <a href="https://2022.aclweb.org/index.html">ACL 2022</a>. At Amazon, I worked under <a href="http://www.kevinsmall.org/">Kevin Small</a>. We worked on a sports conversational multi-turn question-answering dataset.
+                    </p>
 
-
-		</nav>
-		<hr class="nomargin">
-		<br>
-		<div class="content row">
-			<div class="col-md-8">
-
-				<p> I am a Ph.D. candidate in the Department of Computer Science at Purdue University. Currently, I am actively looking for full-time NLP research positions in the industry. I work under the guidance of <a href="https://www.cs.purdue.edu/homes/dgoldwas/">Prof. Dan Goldwasser</a>. My Ph.D. thesis is about conceptualizing and building systems for contextualized pragmatic language understanding.
-</p>
-
-                                 <p>Specifically, I worked on frameworks for wholistic <a href="pubpages/understanding_politics.html">political text contextualization</a> and <a href="pubpages/cultural_context_grounding.html">cultural context grounding for conversations</a>. I have also worked on building and benchmarking challenging <a href="pubpages/language_in_context.html">evaluation datasets</a> for contextualized political text understanding. From a technical standpoint, I worked extensively with transformer-based models, fine-tuning LLMs, large graphs, and neural architecture design. I have also spent significant time designing, collecting, and curating interesting CSS datasets for pragmatic language understanding. I am currently working on <a href="https://www.darpa.mil/program/computational-cultural-understanding">DARPA CCU program</a>.
-                                </p>
-
-                                 <p> I interned at Microsoft Research Redmond in 2021 and Amazon Alexa Seattle in 2019. At MSR, I worked with <a href="https://www.microsoft.com/en-us/research/people/elnouri/">Elnaz Nouri</a>, <a href="https://www.linkedin.com/in/eoveson/">Erik Oveson</a> and <a href="https://scholar.google.com/citations?user=ViilpdV5QxsC&hl=en">Priyanka Kulkarni</a> on building a Reinforcement Learning Guided Multi-Task Framework for Low-Resource Stereotype Detection. Our work was published as a <a href="pubpages/reinforcement_guided.html">long paper</a> at <a href="https://2022.aclweb.org/index.html">ACL 2022</a>. At Amazon, I worked under <a href="http://www.kevinsmall.org/">Kevin Small</a>. We worked on a sports conversational multi-turn question-answering dataset.
-                                </p>
-
-                                <p> Before joining Prof. Goldwasser's lab, I worked as a Research Assistant in <a href="https://www.cse.iitb.ac.in/~pb/">Prof. Pushpak Bhattacharyya's</a> <a href="https://www.cfilt.iitb.ac.in/">CFILT lab</a> at the Indian Institute of Technology, Bombay back in India. I completed my undergraduate studies at the Indian Institute of Technology, Kharagpur in Computer Science and Technology. I was introduced to NLP by <a href="http://www.facweb.iitkgp.ac.in/~niloy/">Prof. Niloy Ganguly</a> and <a href="https://cse.iitkgp.ac.in/~pawang/">Prof. Pawan Goyal</a> during my senior year at IIT Kharagpur.
-                                </p>
-
-
-			</div>
-			<div class="col-md-4">
-				<img alt="" src="images/website_image.jpg" height="400">
-			</div>
-			</div>
-			<br>
-			<hr class="nomargin">
-			<br>
-			<div class="content row">
-				<div class="col-md-8">
-					<p>News</p>
-					<div class="myBox">
-					<ul>
-                        
-			<li>
+                    <p>
+                        Before joining Prof. Goldwasser's lab, I worked as a Research Assistant in <a href="https://www.cse.iitb.ac.in/~pb/">Prof. Pushpak Bhattacharyya's</a> <a href="https://www.cfilt.iitb.ac.in/">CFILT lab</a> at the Indian Institute of Technology, Bombay back in India. I completed my undergraduate studies at the Indian Institute of Technology, Kharagpur in Computer Science and Technology. I was introduced to NLP by <a href="http://www.facweb.iitkgp.ac.in/~niloy/">Prof. Niloy Ganguly</a> and <a href="https://cse.iitkgp.ac.in/~pawang/">Prof. Pawan Goyal</a> during my senior year at IIT Kharagpur.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img alt="" src="images/website_image.jpg" height="400">
+                </div>
+            </div>
+            <br>
+            <hr class="nomargin">
+            <br>
+            <div class="content row">
+                <div class="col-md-8">
+                    <p>News</p>
+                    <div class="myBox">
+                        <ul>
+                            <li>
                                 Presented a <a href="https://www.youtube.com/watch?v=Zwor5DES60M">demo</a> of our cultural grounding pipeline at DARPA CCU PI meeting at Arlington, VA.
-                        </li>
-			<li>
-				Our <a href="pubpages/cultural_context_grounding.html">cultural context grounding paper</a> is accepted to NAACL 2025 main conference as an oral.
-			</li>
-			<li>
-                            Our <a href="pubpages/cultural_context_grounding.html">cultural context grounding paper</a> from <a href="https://www.darpa.mil/program/computational-cultural-understanding">DARPA CCU</a> project is now on Arxiv!
-                        </li>
-						<li> 
-							Our <a href="pubpages/language_in_context.html">language-in-context</a> long paper is accepted to EMNLP 2024 main conference as an oral.
-						</li>
-                        <li>
-                            Noted as one of the <a href="https://2021.aclweb.org/blog/reviewer-list/">outstanding reviewers</a> for ACL-IJCNLP 2021.
-                        </li>
-					</ul>
-					</div>
-				</div>
-
-				<div class="col-md-4"></div>
-			</div>
-
-		</div>
-</body>
+                            </li>
+                            <li>
+                                Our <a href="pubpages/cultural_context_grounding.html">cultural context grounding paper</a> is accepted to NAACL 2025 main conference as an oral.
+                            </li>
+                            <li>
+                                Our <a href="pubpages/cultural_context_grounding.html">cultural context grounding paper</a> from <a href="https://www.darpa.mil/program/computational-cultural-understanding">DARPA CCU</a> project is now on Arxiv!
+                            </li>
+                            <li>
+                                Our <a href="pubpages/language_in_context.html">language-in-context</a> long paper is accepted to EMNLP 2024 main conference as an oral.
+                            </li>
+                            <li>
+                                Noted as one of the <a href="https://2021.aclweb.org/blog/reviewer-list/">outstanding reviewers</a> for ACL-IJCNLP 2021.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </body>
 </html>
 
