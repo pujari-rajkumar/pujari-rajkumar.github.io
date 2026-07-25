@@ -1,72 +1,58 @@
-
 <!doctype html>
-<!-- The DOCTYPE declaration above will set the     -->
-<!-- browser's rendering engine into                -->
-<!-- "Standards Mode". Replacing this declaration   -->
-<!-- with a "Quirks Mode" doctype is not supported. -->
-
 <html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-<!--                                                               -->
-<!-- Consider inlining css to reduce the number of requested files -->
-<!--                                                               -->
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="css/rajkumar.css">
+		<script>
+			(function () {
+				try {
+					var t = localStorage.getItem('theme') || 'dark';
+					document.documentElement.setAttribute('data-theme', t);
+				} catch (e) {
+					document.documentElement.setAttribute('data-theme', 'dark');
+				}
+			})();
+		</script>
 
-<!--                                           -->
-<!-- Any title is fine                         -->
-<!--                                           -->
-<title>Rajkumar Pujari</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/rajkumar.css">
 
-<!--                                           -->
-<!-- This script loads your compiled module.   -->
-<!-- If you add any GWT meta tags, they must   -->
-<!-- be added before this line.                -->
-<!--                                           -->
-<script type="text/javascript" language="javascript"
-	src="js/bootstrap.min.js"></script>
-	
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		<title>Rajkumar Pujari</title>
 
-  ga('create', 'UA-79894772-1', 'auto');
-  ga('send', 'pageview');
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-</script>
+		  ga('create', 'UA-79894772-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
 
-</head>
+	<body>
+		<header class="site-header">
+			<div class="site-header-inner">
+				<a class="site-title" href="index.html">Rajkumar Pujari</a>
+				<nav class="mynavbar">
+					<a href="index.html" class="nav-link">Home</a>
+					<a href="publications.html" class="nav-link">Publications</a>
+					<a href="thoughts.html" class="nav-link active">Thoughts</a>
+				</nav>
+				<button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+					<svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 4.5a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1Zm0 15a1 1 0 0 1 1 1V22a1 1 0 1 1-2 0v-1.5a1 1 0 0 1 1-1ZM4.5 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1.5a1 1 0 0 1 1 1Zm15 0a1 1 0 0 1 1-1H22a1 1 0 1 1 0 2h-1.5a1 1 0 0 1-1-1ZM6.34 7.76a1 1 0 0 1-1.42 0L3.85 6.68a1 1 0 1 1 1.41-1.41l1.08 1.07a1 1 0 0 1 0 1.42Zm12.03 12.03a1 1 0 0 1-1.41 0l-1.08-1.07a1 1 0 0 1 1.41-1.42l1.08 1.08a1 1 0 0 1 0 1.41ZM6.34 16.24a1 1 0 0 1 0 1.42l-1.08 1.07a1 1 0 1 1-1.41-1.41l1.07-1.08a1 1 0 0 1 1.42 0Zm12.03-12.03a1 1 0 0 1 0 1.41l-1.08 1.08a1 1 0 1 1-1.41-1.42l1.07-1.07a1 1 0 0 1 1.42 0ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
+					<svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.742 13.045a8.088 8.088 0 0 1-2.077.27c-4.678 0-8.47-3.793-8.47-8.47 0-1.14.226-2.226.638-3.216a.5.5 0 0 0-.61-.67C5.71 2.4 2.5 6.61 2.5 11.57 2.5 17.34 7.16 22 12.93 22c4.51 0 8.35-2.86 9.82-6.87a.5.5 0 0 0-.51-.67c-.5.06-1 .1-1.5.1Z"/></svg>
+				</button>
+			</div>
+		</header>
 
+		<main class="page">
+			<!-- <h3> [Apr 20, 2025] Why does AGI need cognitive modeling?</h3> -->
+		</main>
 
-<body>
-	<div class="container">
-		<center>
-			<h2>Rajkumar Pujari</h2>
-		</center>
+		<footer class="site-footer">&copy; 2026 Rajkumar Pujari</footer>
 
-		<hr class="nomargin">
-		<nav class=mynavbar>
-			<a href="index.html">HOME</a>
-            <a href="publications.html">PUBLICATIONS</a>
-            <a href="software.html">SOFTWARE</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="cv.html"><span class="focus">CV</span></a>
-            <a href="thoughts.html">THOUGHTS</a>
-		</nav>
-
-        <!-- <h3> [Apr 20, 2025] Why does AGI need cognitive modeling?</h3> -->
-		
-		
-
-
-	</div>
-
-</body>
+		<script src="js/theme.js" defer></script>
+	</body>
 </html>
-

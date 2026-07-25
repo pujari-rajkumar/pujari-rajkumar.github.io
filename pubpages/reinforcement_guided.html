@@ -1,91 +1,76 @@
-
 <!doctype html>
-<!-- The DOCTYPE declaration above will set the     -->
-<!-- browser's rendering engine into                -->
-<!-- "Standards Mode". Replacing this declaration   -->
-<!-- with a "Quirks Mode" doctype is not supported. -->
-
 <html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-<!--                                                               -->
-<!-- Consider inlining css to reduce the number of requested files -->
-<!--                                                               -->
-<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
-<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="../css/rajkumar.css"
+		<script>
+			(function () {
+				try {
+					var t = localStorage.getItem('theme') || 'dark';
+					document.documentElement.setAttribute('data-theme', t);
+				} catch (e) {
+					document.documentElement.setAttribute('data-theme', 'dark');
+				}
+			})();
+		</script>
 
-<!--                                           -->
-<!-- Any title is fine                         -->
-<!--                                           -->
-<title>Rajkumar Pujari</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="../css/rajkumar.css">
 
-<!--                                           -->
-<!-- This script loads your compiled module.   -->
-<!-- If you add any GWT meta tags, they must   -->
-<!-- be added before this line.                -->
-<!--                                           -->
-<script type="text/javascript" language="javascript"
-	src="js/bootstrap.min.js"></script>
-	
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		<title>Rajkumar Pujari</title>
 
-  ga('create', 'UA-79894772-1', 'auto');
-  ga('send', 'pageview');
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-</script>
-</head>
+		  ga('create', 'UA-79894772-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
 
+	<body>
+		<header class="site-header">
+			<div class="site-header-inner">
+				<a class="site-title" href="../index.html">Rajkumar Pujari</a>
+				<nav class="mynavbar">
+					<a href="../index.html" class="nav-link">Home</a>
+					<a href="../publications.html" class="nav-link active">Publications</a>
+				</nav>
+				<button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+					<svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 4.5a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1Zm0 15a1 1 0 0 1 1 1V22a1 1 0 1 1-2 0v-1.5a1 1 0 0 1 1-1ZM4.5 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1.5a1 1 0 0 1 1 1Zm15 0a1 1 0 0 1 1-1H22a1 1 0 1 1 0 2h-1.5a1 1 0 0 1-1-1ZM6.34 7.76a1 1 0 0 1-1.42 0L3.85 6.68a1 1 0 1 1 1.41-1.41l1.08 1.07a1 1 0 0 1 0 1.42Zm12.03 12.03a1 1 0 0 1-1.41 0l-1.08-1.07a1 1 0 0 1 1.41-1.42l1.08 1.08a1 1 0 0 1 0 1.41ZM6.34 16.24a1 1 0 0 1 0 1.42l-1.08 1.07a1 1 0 1 1-1.41-1.41l1.07-1.08a1 1 0 0 1 1.42 0Zm12.03-12.03a1 1 0 0 1 0 1.41l-1.08 1.08a1 1 0 1 1-1.41-1.42l1.07-1.07a1 1 0 0 1 1.42 0ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
+					<svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.742 13.045a8.088 8.088 0 0 1-2.077.27c-4.678 0-8.47-3.793-8.47-8.47 0-1.14.226-2.226.638-3.216a.5.5 0 0 0-.61-.67C5.71 2.4 2.5 6.61 2.5 11.57 2.5 17.34 7.16 22 12.93 22c4.51 0 8.35-2.86 9.82-6.87a.5.5 0 0 0-.51-.67c-.5.06-1 .1-1.5.1Z"/></svg>
+				</button>
+			</div>
+		</header>
 
-<body>
-	<div class="container">
-		<center>
-			<h2>Rajkumar Pujari</h2>
-		</center>
+		<main class="page pub-detail">
+			<div class="video-wrap">
+				<iframe src="https://www.youtube.com/embed/Rvxf7xWrMyQ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
 
-		<hr class="nomargin">
-		<nav class=mynavbar>
-			<a href="../index.html">HOME</a>
-				<a href="../publications.html"><span class="focus">PUBLICATIONS</span></a>
-				<a href="../software.html">SOFTWARE</a>
-				<a href="../contact.html">CONTACT</a>
-				<a href="../cv.html">CV</a>
-			
-		
-		</nav>
-		<hr class="nomargin">
-		<br>
+			<h1 class="pub-detail-title">Reinforcement Guided Multi-Task Learning Framework for Low-Resource Stereotype Detection</h1>
+			<div class="pub-detail-authors"><strong>Rajkumar Pujari</strong>, Erik Oveson, Priyanka Kulkarni, Elnaz Nouri</div>
+			<div class="pub-detail-venue">Long paper at ACL 2022</div>
+			<div class="pub-links pub-detail-links">
+				<a href="https://arxiv.org/abs/2203.14349">link</a>
+				<a href="https://github.com/pujari-rajkumar/rl-guided-multitask-learning">code</a>
+				<a href="../data/reinforcement_guided_ppt.pdf">presentation</a>
+				<a href="../data/reinforcement_guided_poster.pdf">poster</a>
+			</div>
 
-		
+			<div class="pub-detail-abstract">
+				<h3>Abstract</h3>
+				<p>
+					As large Pre-trained Language Models (PLMs) trained on large amounts of data in an unsupervised manner become more ubiquitous, identifying various types of bias in the text has come into sharp focus. Existing 'Stereotype Detection' datasets mainly adopt a diagnostic approach toward large PLMs. Blodgett et. al. (2021) show that there are significant reliability issues with the existing benchmark datasets. Annotating a reliable dataset requires a precise understanding of the subtle nuances of how stereotypes manifest in text. In this paper, we annotate a focused evaluation set for 'Stereotype Detection' that addresses those pitfalls by de-constructing various ways in which stereotypes manifest in text. Further, we present a multi-task model that leverages the abundance of data-rich neighboring tasks such as hate speech detection, offensive language detection, misogyny detection, etc., to improve the empirical performance on 'Stereotype Detection'. We then propose a reinforcement-learning agent that guides the multi-task learning model by learning to identify the training examples from the neighboring tasks that help the target task the most. We show that the proposed models achieve significant empirical gains over existing baselines on all the tasks.
+				</p>
+			</div>
+		</main>
 
-		<center>
-		<iframe width="840" height="472" src="https://www.youtube.com/embed/Rvxf7xWrMyQ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-		<br>
+		<footer class="site-footer">&copy; 2026 Rajkumar Pujari</footer>
 
-		<div class="publication">
-			<h4 style="margin-bottom:0px">Reinforcement Guided Multi-Task Learning Framework for Low-Resource Stereotype Detection <span>(<a href="https://arxiv.org/abs/2203.14349">link</a>, <a href="https://github.com/pujari-rajkumar/rl-guided-multitask-learning">code</a>, <a href="../data/reinforcement_guided_ppt.pdf">presentation</a>, <a href="../data/reinforcement_guided_poster.pdf">poster</a>)</span></h4>
-			<span style="color:#991818">Rajkumar Pujari, Erik Oveson, Priyanka Kulkarni, Elnaz Nouri</span><br>
-			<span style="color:#991818">Long paper at ACL 2022</span><br>
-		</div>
-
-        <div class="content row">
-            <p style="text-align:left">
-                <strong>Abstract:</strong>
-                As large Pre-trained Language Models (PLMs) trained on large amounts of data in an unsupervised manner become more ubiquitous, identifying various types of bias in the text has come into sharp focus. Existing ‘Stereotype Detection’ datasets mainly adopt a diagnostic approach toward large PLMs. Blodgett et. al. (2021) show that there are significant reliability issues with the existing benchmark datasets. Annotating a reliable dataset requires a precise understanding of the subtle nuances of how stereotypes manifest in text. In this paper, we annotate a focused evaluation set for ‘Stereotype Detection’ that addresses those pitfalls by de-constructing various ways in which stereotypes manifest in text. Further, we present a multi-task model that leverages the abundance of data-rich neighboring tasks such as hate speech detection, offensive language detection, misogyny detection, etc., to improve the empirical performance on ‘Stereotype Detection’. We then propose a reinforcement-learning agent that guides the multi-task learning model by learning to identify the training examples from the neighboring tasks that help the target task the most. We show that the proposed models achieve significant empirical gains over existing baselines on all the tasks.
-            </p>
-        </div>
-
-		</center>
-
-	</div>
-
-</body>
+		<script src="../js/theme.js" defer></script>
+	</body>
 </html>
-

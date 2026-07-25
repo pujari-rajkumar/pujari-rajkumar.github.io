@@ -1,210 +1,241 @@
 <!doctype html>
-<!-- The DOCTYPE declaration above will set the     -->
-<!-- browser's rendering engine into                -->
-<!-- "Standards Mode". Replacing this declaration   -->
-<!-- with a "Quirks Mode" doctype is not supported. -->
-
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-        <!--                                                               -->
-        <!-- Consider inlining css to reduce the number of requested files -->
-        <!--                                                               -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-        <link type="text/css" rel="stylesheet" href="css/rajkumar.css" />
+		<script>
+			(function () {
+				try {
+					var t = localStorage.getItem('theme') || 'dark';
+					document.documentElement.setAttribute('data-theme', t);
+				} catch (e) {
+					document.documentElement.setAttribute('data-theme', 'dark');
+				}
+			})();
+		</script>
 
-        <!--                                           -->
-        <!-- Any title is fine                         -->
-        <!--                                           -->
-        <title>Rajkumar Pujari</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+		<link type="text/css" rel="stylesheet" href="css/rajkumar.css" />
 
-        <!--                                           -->
-        <!-- This script loads your compiled module.   -->
-        <!-- If you add any GWT meta tags, they must   -->
-        <!-- be added before this line.                -->
-        <!--                                           -->
-        <script type="text/javascript" language="javascript" src="js/bootstrap.min.js"></script>
-        
-        <script>
-            (function(i,s,o,g,r,a,m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments);
-                };
-                i[r].l = 1 * new Date();
-                a = s.createElement(o);
-                m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m);
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		<title>Rajkumar Pujari</title>
 
-            ga('create', 'UA-79894772-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-    </head>
+		<script>
+			(function(i,s,o,g,r,a,m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments);
+				};
+				i[r].l = 1 * new Date();
+				a = s.createElement(o);
+				m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m);
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <body>
-        <div class="container">
-            <center>
-                <h2>Rajkumar Pujari</h2>
-            </center>
+			ga('create', 'UA-79894772-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
 
-            <hr class="nomargin" />
-            
-            <nav class="mynavbar">
-                <a href="index.html">HOME</a>
-                <a href="publications.html"><span class="focus">PUBLICATIONS</span></a>
-                <a href="software.html">SOFTWARE</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="cv.html">CV</a>
-                <!-- <a href="thoughts.html">THOUGHTS</a> -->
-            </nav>
-            
-            <hr class="nomargin" />
-            <br />
-            
-            <div class="year">
-                <h4>2026</h4>
-                <p>|||||||||||||||||||||||||||||||||||||||||||</p>
-            </div>
+	<body>
+		<header class="site-header">
+			<div class="site-header-inner">
+				<a class="site-title" href="index.html">Rajkumar Pujari</a>
+				<nav class="mynavbar">
+					<a href="index.html" class="nav-link">Home</a>
+					<a href="publications.html" class="nav-link active">Publications</a>
+				</nav>
+				<button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+					<svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 4.5a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1Zm0 15a1 1 0 0 1 1 1V22a1 1 0 1 1-2 0v-1.5a1 1 0 0 1 1-1ZM4.5 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1.5a1 1 0 0 1 1 1Zm15 0a1 1 0 0 1 1-1H22a1 1 0 1 1 0 2h-1.5a1 1 0 0 1-1-1ZM6.34 7.76a1 1 0 0 1-1.42 0L3.85 6.68a1 1 0 1 1 1.41-1.41l1.08 1.07a1 1 0 0 1 0 1.42Zm12.03 12.03a1 1 0 0 1-1.41 0l-1.08-1.07a1 1 0 0 1 1.41-1.42l1.08 1.08a1 1 0 0 1 0 1.41ZM6.34 16.24a1 1 0 0 1 0 1.42l-1.08 1.07a1 1 0 1 1-1.41-1.41l1.07-1.08a1 1 0 0 1 1.42 0Zm12.03-12.03a1 1 0 0 1 0 1.41l-1.08 1.08a1 1 0 1 1-1.41-1.42l1.07-1.07a1 1 0 0 1 1.42 0ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
+					<svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.742 13.045a8.088 8.088 0 0 1-2.077.27c-4.678 0-8.47-3.793-8.47-8.47 0-1.14.226-2.226.638-3.216a.5.5 0 0 0-.61-.67C5.71 2.4 2.5 6.61 2.5 11.57 2.5 17.34 7.16 22 12.93 22c4.51 0 8.35-2.86 9.82-6.87a.5.5 0 0 0-.51-.67c-.5.06-1 .1-1.5.1Z"/></svg>
+				</button>
+			</div>
+		</header>
 
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    <a href="https://arxiv.org/abs/2601.20032">TAIGR: Towards Modeling Influencer Content on Social Media via Structured, Pragmatic Inference</a>,
-                    Oral at ACL 2026
-                    <span>(<a href="https://arxiv.org/abs/2601.20032">link</a>)</span>
-                </h4>
-                <span style="color:#991818">Nishanth Sridhar Nakshatri, Eylon Caplan, Rajkumar Pujari, Dan Goldwasser</span><br />
-            </div>
+		<main class="page">
+			<!--
+				Each publication entry below is a .pub-entry block. To attach a thumbnail
+				figure to a paper, add this as the FIRST child of the .pub-entry div:
+					<div class="pub-thumb"><img src="images/pubs/your-image.jpg" alt=""></div>
+				A figure is entirely optional — entries without one simply use the full
+				width for the title, authors and links, as most of the entries below do.
+			-->
 
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    <a href="https://arxiv.org/abs/2605.30803">PReMISE: Policy Rubrics as Measurement Specifications for LLM Judges</a>,
-                    Under review at EMNLP 2026
-                    <span>(<a href="https://arxiv.org/abs/2605.30803">link</a>)</span>
-                </h4>
-                <span style="color:#991818">Swastik Roy, Rajkumar Pujari, Tharindu Kumarage, Charith Peris, Rahul Gupta, Anna Rumshisky, Pradeep Natarajan, Venkatesh Saligrama</span><br />
-            </div>
+			<div class="pub-year">
+				<h3>2026</h3>
+				<hr>
+			</div>
 
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    <a href="https://arxiv.org/abs/2607.01152">AGC-Bench: Measuring Artificial General Creativity</a>,
-                    Under review at NeurIPS 2026
-                    <span>(<a href="https://arxiv.org/abs/2607.01152">link</a>)</span>
-                </h4>
-                <span style="color:#991818">Roger Beaty, Vijeta Deshpande, Clin K.Y. Lai, Anna Attuch, Namrata Shivagunde, Swastik Roy, Rajkumar Pujari, Paul V. DiStefano, Sherin Muckatira, Claire E. Stevenson, Mikhail Gronas, Anna Rumshisky</span><br />
-            </div>
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title"><a href="https://arxiv.org/abs/2601.20032">TAIGR: Towards Modeling Influencer Content on Social Media via Structured, Pragmatic Inference</a></h4>
+					<div class="pub-venue">Oral at ACL 2026</div>
+					<div class="pub-authors">Nishanth Sridhar Nakshatri, Eylon Caplan, <strong>Rajkumar Pujari</strong>, Dan Goldwasser</div>
+					<div class="pub-links">
+						<a href="https://arxiv.org/abs/2601.20032">link</a>
+					</div>
+				</div>
+			</div>
 
-            <div class="year">
-                <h4>2025</h4>
-                <p>|||||||||||||||||||||||||||||||||||||||||||</p>
-            </div>
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title"><a href="https://arxiv.org/abs/2605.30803">PReMISE: Policy Rubrics as Measurement Specifications for LLM Judges</a></h4>
+					<div class="pub-venue">Under review at EMNLP 2026</div>
+					<div class="pub-authors">Swastik Roy, <strong>Rajkumar Pujari</strong>, Tharindu Kumarage, Charith Peris, Rahul Gupta, Anna Rumshisky, Pradeep Natarajan, Venkatesh Saligrama</div>
+					<div class="pub-links">
+						<a href="https://arxiv.org/abs/2605.30803">link</a>
+					</div>
+				</div>
+			</div>
 
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    <a href="pubpages/cultural_context_grounding.html">LLM-Human Pipeline for Cultural Context Grounding of Conversations</a>,
-                    Talk at NAACL 2025 main conference 
-                    <span>(<a href="https://arxiv.org/abs/2410.13727">link</a>)</span>
-                </h4>
-                <span style="color:#991818">Rajkumar Pujari, Dan Goldwasser</span><br />
-            </div>
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title"><a href="https://arxiv.org/abs/2607.01152">AGC-Bench: Measuring Artificial General Creativity</a></h4>
+					<div class="pub-venue">Under review at NeurIPS 2026</div>
+					<div class="pub-authors">Roger Beaty, Vijeta Deshpande, Clin K.Y. Lai, Anna Attuch, Namrata Shivagunde, Swastik Roy, <strong>Rajkumar Pujari</strong>, Paul V. DiStefano, Sherin Muckatira, Claire E. Stevenson, Mikhail Gronas, Anna Rumshisky</div>
+					<div class="pub-links">
+						<a href="https://arxiv.org/abs/2607.01152">link</a>
+					</div>
+				</div>
+			</div>
 
-            <div class="year">
-                <h4>2024</h4>
-                <p>|||||||||||||||||||||||||||||||||||||||||||</p>
-            </div>
-            
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    <a href="pubpages/language_in_context.html">"We Demand Justice!": Towards Grounding Political Text in Social Context</a>, 
-                    Talk at EMNLP 2024 main conference
-                    <span>(<a href="https://arxiv.org/abs/2311.09106">link</a>, <a href="data/language_in_context_ppt.pdf">presentation</a>, <a href="data/language_in_context_poster.pdf">poster</a>)</span>
-                </h4>
-                <span style="color:#991818">Rajkumar Pujari, Chengfei Wu and Dan Goldwasser</span><br />
-            </div>
+			<div class="pub-year">
+				<h3>2025</h3>
+				<hr>
+			</div>
 
-            <div class="year">
-                <h4>2022</h4>
-                <p>|||||||||||||||||||||||||||||||||||||||||||</p>
-            </div>
-            
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    <a href="pubpages/reinforcement_guided.html">Reinforcement Guided Multi-Task Learning Framework for Low-Resource Stereotype Detection</a>, 
-                    Poster at ACL 2022 main conference
-                    <span>(<a href="https://arxiv.org/abs/2203.14349">link</a>, <a href="https://github.com/pujari-rajkumar/rl-guided-multitask-learning">code</a>, <a href="data/reinforcement_guided_ppt.pdf">presentation</a>, <a href="data/reinforcement_guided_poster.pdf">poster</a>)</span>
-                </h4>
-                <span style="color:#991818">Rajkumar Pujari, Erik Oveson, Priyanka Kulkarni and Elnaz Nouri</span><br />
-            </div>
-            
-            <div class="year">
-                <h4>2021</h4>
-                <p>|||||||||||||||||||||||||||||||||||||||||||</p>
-            </div>
-            
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    <a href="pubpages/understanding_politics.html">Understanding Politics via Contextualized Discourse Processing</a>, 
-                    Talk at EMNLP 2021 
-                    <span>(<a href="https://aclanthology.org/2021.emnlp-main.102/">link</a>, <a href="https://github.com/pujari-rajkumar/compositional_learner">code</a>, <a href="data/understanding_politics_ppt.pdf">presentation</a>, <a href="data/understanding_politics_poster.pdf">poster</a>)</span>
-                </h4>
-                <span style="color:#991818">Rajkumar Pujari, Dan Goldwasser</span><br />
-            </div>
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title"><a href="pubpages/cultural_context_grounding.html">LLM-Human Pipeline for Cultural Context Grounding of Conversations</a></h4>
+					<div class="pub-venue">Talk at NAACL 2025 main conference</div>
+					<div class="pub-authors"><strong>Rajkumar Pujari</strong>, Dan Goldwasser</div>
+					<div class="pub-links">
+						<a href="https://arxiv.org/abs/2410.13727">link</a>
+					</div>
+				</div>
+			</div>
 
-            <div class="year">
-                <h4>2019</h4>
-                <p>|||||||||||||||||||||||||||||||||||||||||||</p>
-            </div>
-            
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    Using Natural Language Relations between Answer Choices for Machine Comprehension, 
-                    Talk at NAACL-HLT 2019 
-                    <span>(<a href="https://www.aclweb.org/anthology/N19-1403/">link</a>, <a href="https://github.com/pujari-rajkumar/naacl2019">code</a>)</span>
-                </h4>
-                <span style="color:#991818">Rajkumar Pujari, Dan Goldwasser</span><br />
-            </div>
+			<div class="pub-year">
+				<h3>2024</h3>
+				<hr>
+			</div>
 
-            <div class="year">
-                <h4>2018</h4>
-                <p>|||||||||||||||||||||||||||||||||||||||||||</p>
-            </div>
-            
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    Can Taxonomy Help? Improving Semantic Question Matching using Question Taxonomy, 
-                    Poster at COLING 2018 
-                    <span>(<a href="https://www.aclweb.org/anthology/C18-1042/">link</a>, <a href="https://github.com/deepaknlp/Semamtic-Question-Matching">data</a>)</span>
-                </h4>
-                <span style="color:#991818">Deepak Gupta, Rajkumar Pujari, Asif Ekbal, Pushpak Bhattacharyya, Anutosh Maitra, Tom Jain, Shubhashis Sengupta</span><br />
-            </div>
-            
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    Utilizing deep learning with an information retrieval mechanism to provide question answering in restricted domains 
-                    <span>(<a href="https://patentimages.storage.googleapis.com/5f/6f/47/8d482a64882b67/US20180341871A1.pdf">link</a>)</span>
-                </h4>
-                <span style="color:#991818">Anutosh Maitra, Shubhashis Sengupta, Tom Jain, Sanjay Podder, Rajkumar Pujari, Deepak Gupta, Asif Ekbal, Pushpak Bhattacharyya</span><br />
-            </div>
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title"><a href="pubpages/language_in_context.html">"We Demand Justice!": Towards Grounding Political Text in Social Context</a></h4>
+					<div class="pub-venue">Talk at EMNLP 2024 main conference</div>
+					<div class="pub-authors"><strong>Rajkumar Pujari</strong>, Chengfei Wu and Dan Goldwasser</div>
+					<div class="pub-links">
+						<a href="https://arxiv.org/abs/2311.09106">link</a>
+						<a href="data/language_in_context_ppt.pdf">presentation</a>
+						<a href="data/language_in_context_poster.pdf">poster</a>
+					</div>
+				</div>
+			</div>
 
-            <div class="year">
-                <h4>2014</h4>
-                <p>|||||||||||||||||||||||||||||||||||||||||||</p>
-            </div>
-            
-            <div class="publication">
-                <h4 style="margin-bottom:0px">
-                    A Novel Two-stage Framework for Extracting Opinionated Sentences from News Articles, 
-                    In TextGraphs-9 workshop at EMNLP 2014 
-                    <span>(<a href="https://www.aclweb.org/anthology/W14-3704/">link</a>)</span>
-                </h4>
-                <span style="color:#991818">Rajkumar Pujari, Swara Desai, Niloy Ganguly, Pawan Goyal</span><br />
-            </div>
-        </div>
-    </body>
+			<div class="pub-year">
+				<h3>2022</h3>
+				<hr>
+			</div>
+
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title"><a href="pubpages/reinforcement_guided.html">Reinforcement Guided Multi-Task Learning Framework for Low-Resource Stereotype Detection</a></h4>
+					<div class="pub-venue">Poster at ACL 2022 main conference</div>
+					<div class="pub-authors"><strong>Rajkumar Pujari</strong>, Erik Oveson, Priyanka Kulkarni and Elnaz Nouri</div>
+					<div class="pub-links">
+						<a href="https://arxiv.org/abs/2203.14349">link</a>
+						<a href="https://github.com/pujari-rajkumar/rl-guided-multitask-learning">code</a>
+						<a href="data/reinforcement_guided_ppt.pdf">presentation</a>
+						<a href="data/reinforcement_guided_poster.pdf">poster</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="pub-year">
+				<h3>2021</h3>
+				<hr>
+			</div>
+
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title"><a href="pubpages/understanding_politics.html">Understanding Politics via Contextualized Discourse Processing</a></h4>
+					<div class="pub-venue">Talk at EMNLP 2021</div>
+					<div class="pub-authors"><strong>Rajkumar Pujari</strong>, Dan Goldwasser</div>
+					<div class="pub-links">
+						<a href="https://aclanthology.org/2021.emnlp-main.102/">link</a>
+						<a href="https://github.com/pujari-rajkumar/compositional_learner">code</a>
+						<a href="data/understanding_politics_ppt.pdf">presentation</a>
+						<a href="data/understanding_politics_poster.pdf">poster</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="pub-year">
+				<h3>2019</h3>
+				<hr>
+			</div>
+
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title">Using Natural Language Relations between Answer Choices for Machine Comprehension</h4>
+					<div class="pub-venue">Talk at NAACL-HLT 2019</div>
+					<div class="pub-authors"><strong>Rajkumar Pujari</strong>, Dan Goldwasser</div>
+					<div class="pub-links">
+						<a href="https://www.aclweb.org/anthology/N19-1403/">link</a>
+						<a href="https://github.com/pujari-rajkumar/naacl2019">code</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="pub-year">
+				<h3>2018</h3>
+				<hr>
+			</div>
+
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title">Can Taxonomy Help? Improving Semantic Question Matching using Question Taxonomy</h4>
+					<div class="pub-venue">Poster at COLING 2018</div>
+					<div class="pub-authors">Deepak Gupta, <strong>Rajkumar Pujari</strong>, Asif Ekbal, Pushpak Bhattacharyya, Anutosh Maitra, Tom Jain, Shubhashis Sengupta</div>
+					<div class="pub-links">
+						<a href="https://www.aclweb.org/anthology/C18-1042/">link</a>
+						<a href="https://github.com/deepaknlp/Semamtic-Question-Matching">data</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title">Utilizing deep learning with an information retrieval mechanism to provide question answering in restricted domains</h4>
+					<div class="pub-authors">Anutosh Maitra, Shubhashis Sengupta, Tom Jain, Sanjay Podder, <strong>Rajkumar Pujari</strong>, Deepak Gupta, Asif Ekbal, Pushpak Bhattacharyya</div>
+					<div class="pub-links">
+						<a href="https://patentimages.storage.googleapis.com/5f/6f/47/8d482a64882b67/US20180341871A1.pdf">link</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="pub-year">
+				<h3>2014</h3>
+				<hr>
+			</div>
+
+			<div class="pub-entry">
+				<div class="pub-body">
+					<h4 class="pub-title">A Novel Two-stage Framework for Extracting Opinionated Sentences from News Articles</h4>
+					<div class="pub-venue">In TextGraphs-9 workshop at EMNLP 2014</div>
+					<div class="pub-authors"><strong>Rajkumar Pujari</strong>, Swara Desai, Niloy Ganguly, Pawan Goyal</div>
+					<div class="pub-links">
+						<a href="https://www.aclweb.org/anthology/W14-3704/">link</a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="site-footer">&copy; 2026 Rajkumar Pujari</footer>
+
+		<script src="js/theme.js" defer></script>
+	</body>
 </html>
-
