@@ -80,7 +80,7 @@ hr {
 }
 
 .site-title {
-	font-size: 1.3rem;
+	font-size: 1.7rem;
 	font-weight: 700;
 	color: var(--text);
 	letter-spacing: .2px;
@@ -160,11 +160,6 @@ html[data-theme="light"] .icon-moon {
 	min-width: 0;
 }
 
-.page-title {
-	margin: 0 0 16px;
-	font-size: 1.8rem;
-}
-
 .profile-text p {
 	margin: 0 0 16px;
 	font-size: .9rem;
@@ -176,7 +171,6 @@ html[data-theme="light"] .icon-moon {
 	flex-direction: column;
 	align-items: center;
 	gap: 16px;
-	margin-top: 54px;
 }
 
 .profile-photo {
@@ -513,10 +507,6 @@ html[data-theme="light"] .icon-moon {
 
 	.service-year {
 		flex: none;
-	}
-
-	.profile-side {
-		margin-top: 0;
 	}
 
 	.mynavbar {
