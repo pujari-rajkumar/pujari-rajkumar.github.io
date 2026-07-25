@@ -252,6 +252,36 @@ html[data-theme="light"] .icon-moon {
 	white-space: nowrap;
 }
 
+.news-list li.news-extra {
+	display: none;
+}
+
+.news-list.expanded li.news-extra {
+	display: flex;
+}
+
+.news-more-btn {
+	display: block;
+	margin: 16px auto 0;
+	padding: 6px 18px;
+	font-size: .82rem;
+	font-weight: 700;
+	border-radius: 999px;
+	border: 1px solid var(--border);
+	background: none;
+	color: var(--text-muted);
+	cursor: pointer;
+}
+
+.news-more-btn:empty {
+	display: none;
+}
+
+.news-more-btn:hover {
+	color: var(--accent);
+	border-color: var(--accent);
+}
+
 .service-row {
 	display: flex;
 	gap: 16px;
